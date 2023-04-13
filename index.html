@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Math UIL Study Tool</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="mainpage.css" />
+    <style>
+      .navbar-side {
+        width: 250px;
+        position: fixed;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: 1000;
+        padding-top: 20px;
+      }
+      .navbar-side .nav {
+        width: 100%;
+      }
+      .navbar-side .nav li {
+        width: 100%;
+      }
+      .navbar-side .nav li a {
+        padding: 10px 15px;
+      }
+      .navbar-side .nav .title-link:hover {
+        /* Disable hover effect on title link */
+        background-color: transparent;
+      }
+      .content-wrapper {
+        margin-left: 250px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-default navbar-side">
+      <div class="navbar-header">
+        <a class="navbar-brand title-link" href="#"></a>
+      </div>
+      <ul class="nav">
+        <li><a href="#">Math UIL Study Tool</a></li>
+        <li><a href="PracticePage.html">Practice</a></li>
+        <li><a href="#">Tests</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content-wrapper">
+      <h1>Welcome to the Math UIL Study Tool!</h1>
+      <p>
+        Improve your number sense skills with our auto-generated tests and
+        practice quizzes.
+      </p>
+      <a href="#" class="btn btn-primary btn-lg">Get Started</a>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>

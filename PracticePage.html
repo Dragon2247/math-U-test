@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Practice | Math UIL Study Tool</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="mainpage.css" />
+    <style>
+      /* Custom CSS for side navbar */
+      .navbar-side {
+        width: 250px;
+        position: fixed;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: 1000;
+        padding-top: 20px;
+      }
+
+      .navbar-side .nav {
+        width: 100%;
+      }
+
+      .navbar-side .nav li {
+        width: 100%;
+      }
+
+      .navbar-side .nav li a {
+        padding: 10px 15px;
+      }
+
+      .content-wrapper {
+        margin-left: 250px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-default navbar-side">
+      <div class="navbar-header">
+        <a class="navbar-brand title-link" href="#"></a>
+      </div>
+      <ul class="nav">
+        <li><a href="MainPage.html">Math UIL Study Tool</a></li>
+        <li class="active"><a href="#">Practice</a></li>
+        <li><a href="#">Tests</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content-wrapper">
+      <h1>Practice</h1>
+      <p>
+        Practice your math skills with our auto-generated practice quizzes.
+        Choose a topic below to get started.
+      </p>
+      <h2>Topics</h2>
+      <ul>
+        <li>Algebra</li>
+        <li>Geometry</li>
+        <li>Number Sense</li>
+        <li>Calculator Applications</li>
+      </ul>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>
