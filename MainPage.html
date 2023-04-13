@@ -1,65 +1,66 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
   <head>
-    <meta charset = "UTF-8" />
+    <meta charset="UTF-8" />
     <title>Math UIL Study Tool</title>
     <!-- Bootstrap CSS -->
     <link
-      rel = "stylesheet"
-      href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     />
     <!-- Custom CSS -->
-    <link rel = "stylesheet" href = "mainpage.css" />
+    <link rel="stylesheet" href="mainpage.css" />
+    <style>
+      .navbar-side {
+        width: 250px;
+        position: fixed;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: 1000;
+        padding-top: 20px;
+      }
+      .navbar-side .nav {
+        width: 100%;
+      }
+      .navbar-side .nav li {
+        width: 100%;
+      }
+      .navbar-side .nav li a {
+        padding: 10px 15px;
+      }
+      .navbar-side .nav .title-link:hover {
+        /* Disable hover effect on title link */
+        background-color: transparent;
+      }
+      .content-wrapper {
+        margin-left: 250px;
+        padding: 20px;
+      }
+    </style>
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-default">
-        <div class="navbar-header">
-          <button
-            type = "button"
-            class = "navbar-toggle"
-            data-toggle = "collapse"
-            data-target = "#myNavbar"
-          >
-            <span class = "icon-bar"></span>
-          </button>
-          <a class = "navbar-brand" href="#">Math UIL Study Tool </a>
-        </div>
-        <div class = "collapse navbar-collapse" id = "myNavbar">
-          <ul class = "nav navbar-nav navbar-right">
-            <li><a href = "#">Home</a></li>
-            <li><a href = "#">Practice</a></li>
-            <li><a href = "#">Testing</a></li>
-            <li><a href = "#">About</a></li>
-          </ul>
-        </div>
+    <nav class="navbar navbar-default navbar-side">
+      <div class="navbar-header">
+        <a class="navbar-brand title-link" href="#"></a>
       </div>
-      <!-- Page switching-->>
-      <script>
-        function show(shown, hidden) {
-          document.getElementById(shown).style.display='block';
-          document.getElementById(hidden).style.display='none';
-          return false;
-        }
-        </script>
+      <ul class="nav">
+        <li><a href="#">Math UIL Study Tool</a></li>
+        <li><a href="#">Practice</a></li>
+        <li><a href="#">Tests</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
     </nav>
-    <div id="Page1">
-      Content of page 1
-      <a href="#" onclick="return show('Page2','Page1');">Show page 2</a>
-    </div>
-      
-    <div id="Page2" style="display:none">
-      Content of page 2
-      <a href="#" onclick="return show('Page1','Page2');">Show page 1</a>
-    </div>
+
     <!-- Main Content -->
-    <div class="container-fluid text-center">
+    <div class="content-wrapper">
       <h1>Welcome to the Math UIL Study Tool!</h1>
       <p>
         Improve your number sense skills with our auto-generated tests and
         practice quizzes.
       </p>
-      <a href = "#" class = "btn btn-primary btn-lg">Bingus</a>
+      <a href="#" class="btn btn-primary btn-lg">Get Started</a>
     </div>
 
     <!-- jQuery -->
