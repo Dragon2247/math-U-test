@@ -2,14 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Practice | Math UIL Study Tool</title>
+    <title>Math UIL Study Tool - Tests</title>
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="mainpage.css" />
+    <link rel="stylesheet" href="tests.css" />
+  </head>
+  <body>
     <style>
       /* Custom CSS for side navbar */
       .navbar-side {
@@ -49,26 +51,44 @@
       </div>
       <ul class="nav">
         <li><a href="index.html">Math UIL Study Tool</a></li>
-        <li class="active"><a href="#">Practice</a></li>
+        <li class="active"><a href="PracticePage.html">Practice</a></li>
         <li><a href="testspage.html">Tests</a></li>
         <li><a href="#">About</a></li>
       </ul>
     </nav>
-
     <!-- Main Content -->
-    <div class="content-wrapper">
-      <h1>Practice</h1>
+    <div class="container text-center">
+      <h1>Tests</h1>
       <p>
-        Practice your math skills with our auto-generated practice quizzes.
-        Choose a topic below to get started.
+        Take practice tests to improve your math skills and prepare for UIL
+        competitions.
       </p>
-      <h2>Topics</h2>
-      <ul>
-        <li>Algebra</li>
-        <li>Geometry</li>
-        <li>Number Sense</li>
-        <li>Calculator Applications</li>
-      </ul>
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Algebra</h3>
+          <p>
+            Test your knowledge of algebraic concepts, including equations,
+            functions, and polynomials.
+          </p>
+          <a href="#" class="btn btn-primary">Start Test</a>
+        </div>
+        <div class="col-md-4">
+          <h3>Geometry</h3>
+          <p>
+            Test your skills in plane and solid geometry, including angles,
+            shapes, and proofs.
+          </p>
+          <a href="#" class="btn btn-primary">Start Test</a>
+        </div>
+        <div class="col-md-4">
+          <h3>Number Sense</h3>
+          <p>
+            Test your mental math skills in this timed test that covers
+            arithmetic and number patterns.
+          </p>
+          <a href="#" class="btn btn-primary">Start Test</a>
+        </div>
+      </div>
     </div>
 
     <!-- jQuery -->
