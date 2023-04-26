@@ -4,8 +4,8 @@ methods.num2 = 0;
 methods.main = (args) => {
   let sc = new Scanner(System.in);
   System.out.print("select two numbers:\n");
-  this.num1 = sc.nextDouble();
-  this.num2 = sc.nextDouble();
+  this.num1 = prompt("");
+  this.num2 = prompt("");
   sc.close();
   System.out.print(
     "adding: " +
