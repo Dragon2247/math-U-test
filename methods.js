@@ -4,9 +4,9 @@ methods.num2 = 0;
 methods.main = (args) => {
   let sc = new Scanner(System.in);
   System.out.print("select two numbers:\n");
-  this.num1 = prompt("");
-  this.num2 = prompt("");
-  sc.close();
+  this.num1 = prompt("number 1 : ");
+  this.num2 = prompt("number 2 : ");
+ 
   System.out.print(
     "adding: " +
       this.addition(this.num1, this.num2) +
